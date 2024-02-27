@@ -46,15 +46,6 @@
 
     /* resets end */
 
-    h1 {
-      font-family: Young-Serif, serif;
-      font-size: 4rem;
-    }
-
-    h2 {
-      font-size: 2rem;
-    }
-
     body {
       font-family: Outfit, sans-serif;
       font-family: normal;
@@ -90,32 +81,42 @@
 
     /* headings start */
 
-    ul:first-of-type h2 {
-      font-size: 1.6rem;
-      color: hsl(332, 51%, 32%);
+    h1 {
+      font-family: Young-Serif, serif;
+      font-size: 4rem;
+    }
+
+    h2 {
+      font-size: 2rem;
     }
 
     h2:not(ul:first-of-type h2) {
       color: hsl(14, 45%, 36%);
     }
 
-    /* headings end */
+    ul:first-of-type h2 {
+      font-size: 1.6rem;
+      color: hsl(332, 51%, 32%);
+    }
 
-    /* preparation list start */
-
-    .preparation__list h2{
+    .list-section h2{
       padding-bottom: 1em;
     }
+
+    /* headings end */
+
 
     .preparation__list>li::marker {
       color: hsl(332, 51%, 32%);
     }
 
-    .preparation__list>li {
+    /* list style start */
+
+    .listing--spacing>li {
       padding-bottom: 1em;
     }
 
-    /* preparation list end */
+    /* list style end */
   </style>
 </head>
 
@@ -128,13 +129,13 @@
       An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked
       to perfection, optionally filled with your choice of cheese, vegetables, or meats.
     </p>
-    <ul class="preparation__list">
+    <ul class="list-section listing--spacing">
       <h2>Preparation time</h2>
       <li><b>Total:</b> Approximately 10 minutes</li>
       <li><b>Preparation:</b> 5 minutes</li>
       <li><b>Cooking:</b> 5 minutes</li>
     </ul>
-    <ul>
+    <ul class="list-section listing--spacing">
       <h2>Ingredients</h2>
       <li>2-3 large eggs</li>
       <li>Salt, to taste</li>
@@ -143,7 +144,7 @@
       <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
     </ul>
     <h2>Instructions</h2>
-    <ol>
+    <ol class="list-section listing--spacing">
       <li>
         Beat the eggs: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed.
         You can add a tablespoon of water or milk for a fluffier texture.
