@@ -18,7 +18,7 @@
         url("./assets/fonts/outfit/static/Outfit-Light.ttf"),
         url("./assets/fonts/outfit/static/Outfit-Medium.ttf"),
         url("./assets/fonts/outfit/static/Outfit-Regular.ttf"),
-        url("./assets/fonts/outfit/static/Outfit-Black.ttf"),
+        url("./assets/fonts/outfit/static/Outfit-Bold.ttf"),
         url("./assets/fonts/outfit/static/Outfit-ExtraBlack.ttf"),
     }
 
@@ -79,6 +79,10 @@
       font-family: Outfit, sans-serif;
     }
 
+    b {
+      font-weight: 800;
+    }
+
     /* headings start */
 
     h1 {
@@ -106,14 +110,22 @@
     /* headings end */
 
 
-    .preparation__list>li::marker {
+    /* list style start */
+
+    .list-section:first-of-type>li::marker {
       color: hsl(332, 51%, 32%);
     }
 
-    /* list style start */
-
     .listing--spacing>li {
       padding-bottom: 1em;
+    }
+
+    .list-section>li::marker {
+      color: hsl(14, 45%, 36%);
+    }
+    
+    .list-section>li{
+      padding-left: 1em;
     }
 
     /* list style end */
